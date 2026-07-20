@@ -3,36 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>解冻倒计时</title>
+    <title>解冻倒计时 | 下载</title>
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="icon" href="/assets/images/icons/NewYearCountdown/icon.png" type="image/png">
 </head>
 <body>
     <!--导航栏-->
-    <nav id="navbar">
+    <nav id="navbar" class="navbar">
         <div class="container">
             <div class="logo">
                 <span>龙ger_longer</span>
-                <div class="path">
-                    <a href="/" class="link">首页</a>
-                    /
-                    <a href="/products" class="link">产品</a>
-                    /
-                    <a href="../" class="link">解冻倒计时</a>
-                    /
-                    <a href="#" class="link">下载</a>
-                </div>
             </div>
+            <p class="path">
+                <a href="/" class="link">首页</a>
+                /
+                <a href="/products" class="link">产品</a>
+                /
+                <a href="../" class="link">解冻倒计时</a>
+                /
+                <a href="#" class="link">下载</a>
+            </p>
             <ul>
-                <li><a href="/">首页</a></li>
-                <li><a href="/products">更多产品</a></li>
-                <li><a href="#author">社交平台</a></li>
+                <li><a class="btn soft" href="/">首页</a></li>
+                <li id="nav-products" class="nav-products"></li>
+                <li><a class="btn soft" href="#author">社交平台</a></li>
+                <li><a class="btn soft" id="theme-toggle" href="javascript:void(0)" title="切换主题">🌓</a></li>
             </ul>
         </div>
     </nav>
 
     <!--下载-->
-    <section id="download" class="section light-bg">
+    <section id="download" class="section light-bg" style="padding-top: 128px">
         <div class="container">
             <h2><b>下载</b></h2>
             <div class="product-intros">
@@ -45,7 +46,7 @@
                         <li>由于Cloudflare Pages对于文件大小的限制，此下载选项将不会从本网站下载，而将链接到蓝奏云</li>
                     </ul>
                 </a>
-                <a href="https://github.com/longlonger2022/NewYearCountdown/releases/download/NewYearCountdown_v1.1.1/NewYearCountdown_v1.1.1_Release_box.zip" title="点击下载最新版" class="product-intro golden">
+                <a href="https://github.com/0xlonger/NewYearCountdown/releases/download/NewYearCountdown_v1.1.1/NewYearCountdown_v1.1.1_Release_box.zip" title="点击下载最新版" class="product-intro golden">
                     <h3>最新版-1.1版本（从GitHub Releases下载）</h3>
                     <ul>
                         <li>发布日期：2025年10月3日</li>
@@ -53,13 +54,13 @@
                         <li>由于Cloudflare Pages对于文件大小的限制，此下载选项将不会从本网站下载，而将链接到GitHub仓库下载直链</li>
                     </ul>
                 </a>
-                <a href="https://github.com/longlonger2022/NewYearCountdown/releases" title="点击前往GitHub查看更多版本" class="product-intro" target="_blank">
+                <a href="https://github.com/0xlonger/NewYearCountdown/releases" title="点击前往GitHub查看更多版本" class="product-intro" target="_blank">
                     <h3>更多版本</h3>
                     <ul>
                         <li>前往GitHub查看更多版本</li>
                     </ul>
                 </a>
-                <a href="https://github.com/longlonger2022/NewYearCountdown" title="点击前往GitHub获取源代码" class="product-intro blue" target="_blank">
+                <a href="https://github.com/0xlonger/NewYearCountdown" title="点击前往GitHub获取源代码" class="product-intro blue" target="_blank">
                     <h3>获取源代码</h3>
                     <ul>
                         <li>前往GitHub获取源代码(遵守GPL-3.0开源协议)</li>
@@ -74,7 +75,7 @@
         <div class="container">
             <h2><b>制作者</b></h2>
             <div class="profile">
-                <img src="/img/ProfilePicture/龙ger_longer.png" alt="Profile Picture" class="profile_img">
+                <img src="/assets/images/avatars/龙ger_longer.webp" alt="Profile Picture" class="profile_img">
                 <div class="bio">
                     <b>
                     <p>龙ger_longer：B站科技区整活UP主 | GitHub贡献者 | 解冻倒计时制作者</p>
@@ -87,7 +88,7 @@
                         <a href="https://www.ixigua.com/home/308276834862408" target="_blank" class="btn xigua">西瓜视频</a>
                         <a href="https://www.toutiao.com/c/user/token/MS4wLjABAAAAxkLNY3Z7gbYJdfK0zdDK7uKG-jKFtMxmFeBk_M_yl3w" target="_blank" class="btn toutiao">今日头条</a>
                         <a href="https://www.kuaishou.com/profile/3x2kzmpqxkh9ngk" target="_blank" class="btn kuaishou">快手</a>
-                        <a href="https://github.com/longlonger2022" target="_blank" class="btn github">GitHub个人主页</a>
+                        <a href="https://github.com/0xlonger" target="_blank" class="btn github">GitHub个人主页</a>
                     </div>
                 </div>
             </div>
@@ -97,10 +98,10 @@
     <!--前往下载-->
     <section class="banner gradient" style="background: linear-gradient(-225deg, #ff2121 0%, #ff641f 50%, #c32136 100%);background-size: 400% 400%;">
         <div class="container">
-            <img src="/img/Icon/NewYearCountdown_icon.512px.png" alt="icon" class="product_img" style="filter: drop-shadow(0 10px 10px rgba(0, 0, 0, 0.5));">
+            <img src="/assets/images/icons/NewYearCountdown/icon.png" alt="icon" class="product_img" style="filter: drop-shadow(0 10px 10px rgba(0, 0, 0, 0.5));">
             <h1><b>解冻倒计时</b></h1>
             <p>~~~耶~咦~耶~咦~耶~咦~耶~哈~吼~~~</p>
-            <a href="#download" class="btn">前往下载</a>
+            <a href="#download" class="btn glass">前往下载</a>
         </div>
     </section>
 
@@ -111,6 +112,7 @@
     <footer id="footer"></footer>
 
     <script src="/js/script.js"></script>
+    <script src="/js/nav-products.js"></script>
     <script src="/js/ad.js"></script>
     <script src="/js/footer.js"></script>
 </body>

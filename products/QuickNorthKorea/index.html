@@ -5,38 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>一键恩情</title>
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="icon" href="/assets/images/icons/QuickNorthKorea/icon.png" type="image/png">
 </head>
 <body>
     <!--导航栏-->
-    <nav id="navbar">
+    <nav id="navbar" class="navbar">
         <div class="container">
             <div class="logo">
                 <span>龙ger_longer</span>
-                <div class="path">
-                    <a href="/" class="link">首页</a>
-                    /
-                    <a href="/products" class="link">产品</a>
-                    /
-                    <a href="#" class="link">一键恩情</a>
-                </div>
             </div>
+            <p class="path">
+                <a href="/" class="link">首页</a>
+                /
+                <a href="/products" class="link">产品</a>
+                /
+                <a href="#" class="link">一键恩情</a>
+            </p>
             <ul>
-                <li><a href="/">首页</a></li>
-                <li><a href="/products">更多产品</a></li>
-                <li><a href="#author">社交平台</a></li>
+                <li><a class="btn soft" href="/">首页</a></li>
+                <li id="nav-products" class="nav-products"></li>
+                <li><a class="btn soft" href="#author">社交平台</a></li>
+                <li><a class="btn soft" id="theme-toggle" href="javascript:void(0)" title="切换主题">🌓</a></li>
             </ul>
         </div>
     </nav>
 
     <!--主页banner-->
-    <header id="top" class="banner" style="background: url(/img/background/KP.png); background-size: cover; background-position: center; background-repeat: no-repeat; background-attachment: fixed;">
+    <header id="top" class="banner" style="background: url(/assets/images/backgrounds/QuickNorthKorea/kp.webp); background-size: cover; background-position: center; background-repeat: no-repeat; background-attachment: fixed;">
         <div class="container">
-            <img src="/img/Icon/QuickNorthKorea_icon.512px.png" alt="icon" class="product_img" style="border-radius: 25px; box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);">
+            <img src="/assets/images/icons/QuickNorthKorea/icon.png" alt="icon" class="product_img" style="border-radius: 25px; box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);">
             <h1><b>一键恩情</b></h1>
             <p><b>一键感受将军的恩情！ \o/</b></p>
             <p><i>本软件仅供娱乐，不代表制作者任何立场。<br>本软件制作者完全支持社会主义，坚持中国共产党的领导。</i></p>
-            <a href="download" class="btn">前往下载</a>
+            <a href="download" class="btn glass">前往下载</a>
         </div>
     </header>
 
@@ -44,17 +45,24 @@
     <section id="details" class="section light-bg">
         <div class="container">
             <h2><b>介绍</b></h2>
-            <div class="product-intros" style="text-align: left; gap: 100%">
+            <div class="product-intros area-intros">
                 <div class="product-introarea">
-                    <p>点击即可体验</p>
-                    <h3><b>将军演讲的瞬间</b></h3>
-                    <img src="/img/IntroducePicture/KimSpeech.gif" alt="pic" class="intro_img">
+                    <p style="text-align: center;">点击即可享受</p>
+                    <h3 style="text-align: center;">将军演讲瞬间</h3>
+                    <br><br>
+                    <div class="embed-wrapper">
+                        <video id="video" class="embed-content" autoplay loop muted>
+                            <source src="/assets/videos/QuickNorthKorea/speech.mp4" type="video/mp4"/>
+                            您的浏览器不支持 HTML5 video 标签，无法播放视频。
+                        </video>
+                    </div>
                 </div>
                 <div class="product-introarea">
-                    <p>让你的电脑成为</p>
-                    <h3>人群中最耀眼的太阳</h3>
-                    <br><br>
-                    <img src="/img/IntroducePicture/QuickNorthKorea_introduce_pic1.jpg" alt="pic" class="intro_img">
+                    <div class="product-introarea-text">
+                        <p>让你的电脑成为</p>
+                        <h3>人群中最耀眼的太阳</h3>
+                    </div>
+                    <img src="/assets/images/screenshots/QuickNorthKorea/screen.webp" alt="pic" class="intro_img">
                 </div>
             </div>
         </div>
@@ -64,8 +72,8 @@
     <section id="bilibili_video" class="section light-bg">
         <div class="container">
             <h2><b>B站视频</b></h2>
-            <div class="video-container">
-                <iframe src="https://player.bilibili.com/player.html?bvid=BV1uuW4zvEXM" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" class="video"> </iframe>
+            <div class="embed-wrapper ratio-16-9">
+                <iframe src="https://player.bilibili.com/player.html?bvid=BV1uuW4zvEXM" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" class="embed-content"></iframe>
             </div>
         </div>
     </section>
@@ -75,7 +83,7 @@
         <div class="container">
             <h2><b>制作者</b></h2>
             <div class="profile">
-                <img src="/img/ProfilePicture/龙ger_longer.png" alt="Profile Picture" class="profile_img">
+                <img src="/assets/images/avatars/龙ger_longer.webp" alt="Profile Picture" class="profile_img">
                 <div class="bio">
                     <b>
                     <p>龙ger_longer：B站科技区整活UP主 | GitHub贡献者 | 一键恩情制作者</p>
@@ -88,7 +96,7 @@
                         <a href="https://www.ixigua.com/home/308276834862408" target="_blank" class="btn xigua">西瓜视频</a>
                         <a href="https://www.toutiao.com/c/user/token/MS4wLjABAAAAxkLNY3Z7gbYJdfK0zdDK7uKG-jKFtMxmFeBk_M_yl3w" target="_blank" class="btn toutiao">今日头条</a>
                         <a href="https://www.kuaishou.com/profile/3x2kzmpqxkh9ngk" target="_blank" class="btn kuaishou">快手</a>
-                        <a href="https://github.com/longlonger2022" target="_blank" class="btn github">GitHub个人主页</a>
+                        <a href="https://github.com/0xlonger" target="_blank" class="btn github">GitHub个人主页</a>
                     </div>
                 </div>
             </div>
@@ -96,13 +104,13 @@
     </section>
 
     <!--前往下载-->
-    <section class="banner" style="background: url(/img/background/KP.png); background-size: cover; background-position: center; background-repeat: no-repeat; background-attachment: fixed;">
+    <section class="banner" style="background: url(/assets/images/backgrounds/QuickNorthKorea/kp.webp); background-size: cover; background-position: center; background-repeat: no-repeat; background-attachment: fixed;">
         <div class="container">
-            <img src="/img/Icon/QuickNorthKorea_icon.512px.png" alt="MaliciousOS_icon.png" class="product_img" style="border-radius: 25px; box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);">
+            <img src="/assets/images/icons/QuickNorthKorea/icon.png" alt="MaliciousOS_icon.png" class="product_img" style="border-radius: 25px; box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);">
             <h1><b>一键恩情</b></h1>
             <p><b>一键感受将军的恩情！ \o/</b></p>
             <p><i>本软件仅供娱乐，不代表制作者任何立场。<br>本软件制作者完全支持社会主义，坚持中国共产党的领导。</i></p>
-            <a href="download" class="btn">前往下载</a>
+            <a href="download" class="btn glass">前往下载</a>
         </div>
     </section>
 
@@ -113,6 +121,7 @@
     <footer id="footer"></footer>
 
     <script src="/js/script.js"></script>
+    <script src="/js/nav-products.js"></script>
     <script src="/js/ad.js"></script>
     <script src="/js/footer.js"></script>
 </body>

@@ -5,26 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>U备份</title>
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="icon" href="/assets/images/icons/UBackup/icon.png" type="image/png">
 </head>
 <body>
     <!--导航栏-->
-    <nav id="navbar">
+    <nav id="navbar" class="navbar">
         <div class="container">
             <div class="logo">
                 <span>龙ger_longer</span>
-                <div class="path">
-                    <a href="/" class="link">首页</a>
-                    /
-                    <a href="/products" class="link">产品</a>
-                    /
-                    <a href="#" class="link">U备份</a>
-                </div>
             </div>
+            <p class="path">
+                <a href="/" class="link">首页</a>
+                /
+                <a href="/products" class="link">产品</a>
+                /
+                <a href="#" class="link">U备份</a>
+            </p>
             <ul>
-                <li><a href="/">首页</a></li>
-                <li><a href="/products">更多产品</a></li>
-                <li><a href="#author">社交平台</a></li>
+                <li><a class="btn soft" href="/">首页</a></li>
+                <li id="nav-products" class="nav-products"></li>
+                <li><a class="btn soft" href="#author">社交平台</a></li>
+                <li><a class="btn soft" id="theme-toggle" href="javascript:void(0)" title="切换主题">🌓</a></li>
             </ul>
         </div>
     </nav>
@@ -32,10 +33,10 @@
     <!--主页banner-->
     <header id="top" class="banner gradient" style="background-image: linear-gradient(-225deg, rgb(202, 197, 49) 0%, rgb(243, 259, 167) 50%, rgb(202, 197, 49)); background-size: 400% 400%;">
         <div class="container">
-            <img src="/img/Icon/UBackup_icon.512px.png" alt="Universal-Timer" class="product_img">
+            <img src="/assets/images/icons/UBackup/icon.png" alt="Universal-Timer" class="product_img">
             <h1><b>U备份</b></h1>
             <p><b>英文名：UBackup | 实用的U盘备份工具</b></p>
-            <a href="download" class="btn">前往下载</a>
+            <a href="download" class="btn glass">前往下载</a>
         </div>
     </header>
 
@@ -43,17 +44,20 @@
     <section id="details" class="section light-bg">
         <div class="container">
             <h2><b>介绍</b></h2>
-            <div class="product-intros" style="text-align: left; gap: 100%">
+            <div class="product-intros area-intros">
                 <div class="product-introarea">
-                    <p>简洁主界面</p>
-                    <h3><b>一触即达</b></h3>
-                    <img src="/img/IntroducePicture/UBackup_introduce_pic1.png" alt="MaliciousOS_introduce_pic1.png" class="intro_img">
+                    <div class="product-introarea-text">
+                        <p>简洁主界面</p>
+                        <h3><b>一触即达</b></h3>
+                    </div>
+                    <img src="/assets/images/screenshots/UBackup/gui.webp" alt="pic" class="intro_img">
                 </div>
                 <div class="product-introarea">
-                    <p>检测到新增驱动器</p>
-                    <h3>自动开始备份</h3>
-                    <br><br>
-                    <img src="/img/IntroducePicture/UBackup_introduce_pic2.png" alt="MaliciousOS_introduce_pic1.png" class="intro_img">
+                    <div class="product-introarea-text">
+                        <p>检测到新增驱动器</p>
+                        <h3>自动开始备份</h3>
+                    </div>
+                    <img src="/assets/images/screenshots/UBackup/notification.webp" alt="pic" class="intro_img">
                 </div>
             </div>
         </div>
@@ -64,7 +68,7 @@
         <div class="container">
             <h2><b>制作者</b></h2>
             <div class="profile">
-                <img src="/img/ProfilePicture/龙ger_longer.png" alt="Profile Picture" class="profile_img">
+                <img src="/assets/images/avatars/龙ger_longer.webp" alt="Profile Picture" class="profile_img">
                 <div class="bio">
                     <b>
                     <p>龙ger_longer：B站科技区整活UP主 | GitHub贡献者 | U备份制作者</p>
@@ -77,7 +81,7 @@
                         <a href="https://www.ixigua.com/home/308276834862408" target="_blank" class="btn xigua">西瓜视频</a>
                         <a href="https://www.toutiao.com/c/user/token/MS4wLjABAAAAxkLNY3Z7gbYJdfK0zdDK7uKG-jKFtMxmFeBk_M_yl3w" target="_blank" class="btn toutiao">今日头条</a>
                         <a href="https://www.kuaishou.com/profile/3x2kzmpqxkh9ngk" target="_blank" class="btn kuaishou">快手</a>
-                        <a href="https://github.com/longlonger2022" target="_blank" class="btn github">GitHub个人主页</a>
+                        <a href="https://github.com/0xlonger" target="_blank" class="btn github">GitHub个人主页</a>
                     </div>
                 </div>
             </div>
@@ -96,6 +100,7 @@
     <footer id="footer"></footer>
 
     <script src="/js/script.js"></script>
+    <script src="/js/nav-products.js"></script>
     <script src="/js/ad.js"></script>
     <script src="/js/footer.js"></script>
 </body>

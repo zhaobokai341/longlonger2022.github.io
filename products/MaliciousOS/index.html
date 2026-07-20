@@ -5,37 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MaliciousOS</title>
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="/assets/images/icons/MaliciousOS/icon.png" type="image/png">
 </head>
 <body>
     <!--导航栏-->
-    <nav id="navbar">
+    <nav id="navbar" class="navbar">
         <div class="container">
             <div class="logo">
                 <span>龙ger_longer</span>
-                <div class="path">
-                    <a href="/" class="link">首页</a>
-                    /
-                    <a href="/products" class="link">产品</a>
-                    /
-                    <a href="#" class="link">MaliciousOS</a>
-                </div>
             </div>
+            <p class="path">
+                <a href="/" class="link">首页</a>
+                /
+                <a href="/products" class="link">产品</a>
+                /
+                <a href="#" class="link">MaliciousOS</a>
+            </p>
             <ul>
-                <li><a href="/">首页</a></li>
-                <li><a href="/products">更多产品</a></li>
-                <li><a href="#author">社交平台</a></li>
+                <li><a class="btn soft" href="/">首页</a></li>
+                <li id="nav-products" class="nav-products"></li>
+                <li><a class="btn soft" href="#author">社交平台</a></li>
+                <li><a class="btn soft" id="theme-toggle" href="javascript:void(0)" title="切换主题">🌓</a></li>
             </ul>
         </div>
     </nav>
 
     <!--主页banner-->
-    <header id="top" class="banner" style="background: url(/img/background/MaliciousOS_bg1.png); background-size: cover; background-position: center; background-repeat: no-repeat; background-attachment: fixed;">
+    <header id="top" class="banner" style="background: url(/assets/images/backgrounds/MaliciousOS/deploying-4percent.webp); background-size: cover; background-position: center; background-repeat: no-repeat; background-attachment: fixed;">
         <div class="container">
-            <img src="/img/Icon/MaliciousOS_icon.nolgr.512px.png" alt="MaliciousOS_icon.png" class="product_img">
+            <img src="/assets/images/icons/MaliciousOS/icon.png" alt="MaliciousOS_icon.png" class="product_img">
             <h1><b>MaliciousOS</b></h1>
             <p><b>您的嚎朋友值得拥有👍</b></p>
-            <a href="download" class="btn">前往下载</a>
+            <a href="download" class="btn glass">前往下载</a>
         </div>
     </header>
 
@@ -43,36 +44,27 @@
     <section id="details" class="section light-bg">
         <div class="container">
             <h2><b>介绍</b></h2>
-            <div class="product-intros" style="text-align: left; gap: 100%">
+            <div class="product-intros area-intros">
                 <div class="product-introarea">
-                    <br>
-                    <p>仅仅单个ISO镜像文件便可达</p>
-                    <h3><b>整整19.5GB！</b></h3>
-                    <img id="attribute" src="/img/IntroducePicture/MaliciousOS_introduce_pic1.png" alt="MaliciousOS_introduce_pic1.png" class="intro_img">
+                    <div class="product-introarea-text">
+                        <p>仅仅单个ISO镜像文件便可达</p>
+                        <h3><b>整整19.5GB！</b></h3>
+                    </div>
+                    <img src="/assets/images/screenshots/MaliciousOS/attribute.webp" alt="MaliciousOS_introduce_pic1.png" class="intro_img vertical">
                 </div>
                 <div class="product-introarea">
-                    <br>
-                    <h3><b>开机预装</b></h3>
-                    <p>360+2345+longer全家桶，鲁大师，steam游戏中心，驱动精灵，快压，flash中心，ABC看图，小黑记事本……</p>
-                    <img src="/img/IntroducePicture/MaliciousOS_introduce_pic2.png" alt="MaliciousOS_introduce_pic1.png" class="intro_img">
+                    <div class="product-introarea-text">
+                        <h3><b>开机预装</b></h3>
+                        <p>360+2345+longer全家桶，鲁大师，steam游戏中心，驱动精灵，快压，flash中心，ABC看图，小黑记事本……</p>
+                    </div>
+                    <img src="/assets/images/screenshots/MaliciousOS/screen-desktop.webp" alt="MaliciousOS_introduce_pic1.png" class="intro_img">
                 </div>
                 <div class="product-introarea">
-                    <br>
-                    <p>开机即送</p>
-                    <h3><b>满屏广告大礼包</b></h3>
-                    <img src="/img/IntroducePicture/MaliciousOS_introduce_pic3.png" alt="MaliciousOS_introduce_pic1.png" class="intro_img">
-                </div>
-                <div class="product-introarea">
-                    <br>
-                    <h3><b>关于@zhaobokai341给他的一首诗</b></h3>
-                    <p>开机5分钟，
-                    关机10分钟。<br>
-                    广告满天飞，
-                    弹窗蹦蹦跳。<br>
-                    大师在抽烟，
-                    4567在劫持。<br>
-                    盆友装上它，
-                    他会高兴逝~</p>
+                    <div class="product-introarea-text">
+                        <p>开机即送</p>
+                        <h3><b>满屏广告大礼包</b></h3>
+                    </div>
+                    <img src="/assets/images/screenshots/MaliciousOS/screen.webp" alt="MaliciousOS_introduce_pic1.png" class="intro_img">
                 </div>
             </div>
         </div>
@@ -82,8 +74,8 @@
     <section id="bilibili_video" class="section light-bg">
         <div class="container">
             <h2><b>B站视频</b></h2>
-            <div class="video-container">
-                <iframe src="https://player.bilibili.com/player.html?bvid=BV1npYxzuEqP" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" class="video"> </iframe>
+            <div class="embed-wrapper ratio-16-9">
+                <iframe src="https://player.bilibili.com/player.html?bvid=BV1npYxzuEqP" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" class="embed-content"></iframe>
             </div>
         </div>
     </section>
@@ -93,7 +85,7 @@
         <div class="container">
             <h2><b>制作者</b></h2>
             <div class="profile">
-                <img src="/img/ProfilePicture/龙ger_longer.png" alt="Profile Picture" class="profile_img">
+                <img src="/assets/images/avatars/龙ger_longer.webp" alt="Profile Picture" class="profile_img">
                 <div class="bio">
                     <b>
                     <p>龙ger_longer：科技区整活UP主 | GitHub贡献者 | MaliciousOS主制作者</p>
@@ -106,13 +98,13 @@
                         <a href="https://www.ixigua.com/home/308276834862408" target="_blank" class="btn xigua">西瓜视频</a>
                         <a href="https://www.toutiao.com/c/user/token/MS4wLjABAAAAxkLNY3Z7gbYJdfK0zdDK7uKG-jKFtMxmFeBk_M_yl3w" target="_blank" class="btn toutiao">今日头条</a>
                         <a href="https://www.kuaishou.com/profile/3x2kzmpqxkh9ngk" target="_blank" class="btn kuaishou">快手</a>
-                        <a href="https://github.com/longlonger2022" target="_blank" class="btn github">GitHub个人主页</a>
+                        <a href="https://github.com/0xlonger" target="_blank" class="btn github">GitHub个人主页</a>
                     </div>
                 </div>
             </div>
             <br><br>
             <div class="profile">
-                <img src="/img/ProfilePicture/WinSxS-NT.jpg" alt="Profile Picture" class="profile_img">
+                <img src="/assets/images/avatars/WinSxS-NT.webp" alt="Profile Picture" class="profile_img">
                 <div class="bio">
                     <b>
                     <p>WinSxS-NT：MaliciousOS制作与贡献者之一</p>
@@ -126,7 +118,7 @@
             </div>
             <br><br>
             <div class="profile">
-                <img src="/img/ProfilePicture/360度无死角滑稽君.png" alt="Profile Picture" class="profile_img">
+                <img src="/assets/images/avatars/360度无死角滑稽君.webp" alt="Profile Picture" class="profile_img">
                 <div class="bio">
                     <b>
                     <p>360度无死角滑稽君：MaliciousOS制作与贡献者之一</p>
@@ -140,7 +132,7 @@
             </div>
             <br><br>
             <div class="profile">
-                <img src="/img/ProfilePicture/mougou666.jpg" alt="Profile Picture" class="profile_img">
+                <img src="/assets/images/avatars/mougou666.webp" alt="Profile Picture" class="profile_img">
                 <div class="bio">
                     <b>
                     <p>mougou666：MaliciousOS制作与贡献者之一</p>
@@ -154,7 +146,7 @@
             </div>
             <br><br>
             <div class="profile">
-                <img src="/img/ProfilePicture/寒带gird.jpg" alt="Profile Picture" class="profile_img">
+                <img src="/assets/images/avatars/寒带gird.webp" alt="Profile Picture" class="profile_img">
                 <div class="bio">
                     <b>
                     <p>寒带gird：MaliciousOS制作与贡献者之一</p>
@@ -168,7 +160,7 @@
             </div>
             <br><br>
             <div class="profile">
-                <img src="/img/ProfilePicture/乗芷.png" alt="Profile Picture" class="profile_img">
+                <img src="/assets/images/avatars/乗芷.webp" alt="Profile Picture" class="profile_img">
                 <div class="bio">
                     <b>
                     <p>乗芷：MaliciousOS制作与贡献者之一</p>
@@ -184,12 +176,12 @@
     </section>
 
     <!--前往下载-->
-    <section class="banner" style="background: url(/img/background/MaliciousOS_bg2.png); background-size: cover; background-position: center; background-repeat: no-repeat; background-attachment: fixed;">
+    <section class="banner" style="background: url(/assets/images/backgrounds/MaliciousOS/deploying-97percent.webp); background-size: cover; background-position: center; background-repeat: no-repeat; background-attachment: fixed;">
         <div class="container">
-            <img src="/img/Icon/MaliciousOS_icon.nolgr.512px.png" alt="MaliciousOS_icon.png" class="product_img">
+            <img src="/assets/images/icons/MaliciousOS/icon.png" alt="MaliciousOS_icon.png" class="product_img">
             <h1><b>MaliciousOS</b></h1>
             <p><b>您的嚎朋友值得拥有👍</b></p>
-            <a href="download" class="btn">前往下载</a>
+            <a href="download" class="btn glass">前往下载</a>
         </div>
     </section>
 
@@ -200,6 +192,7 @@
     <footer id="footer"></footer>
 
     <script src="/js/script.js"></script>
+    <script src="/js/nav-products.js"></script>
     <script src="/js/ad.js"></script>
     <script src="/js/footer.js"></script>
 

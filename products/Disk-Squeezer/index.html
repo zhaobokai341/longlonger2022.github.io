@@ -5,26 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>硬盘榨干器</title>
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="icon" href="/assets/images/icons/Disk-Squeezer/icon.png" type="image/png">
 </head>
 <body>
     <!--导航栏-->
-    <nav id="navbar">
+    <nav id="navbar" class="navbar">
         <div class="container">
             <div class="logo">
                 <span>龙ger_longer</span>
-                <div class="path">
-                    <a href="/" class="link">首页</a>
-                    /
-                    <a href="/products" class="link">产品</a>
-                    /
-                    <a href="#" class="link">硬盘榨干器</a>
-                </div>
             </div>
+            <p class="path">
+                <a href="/" class="link">首页</a>
+                /
+                <a href="/products" class="link">产品</a>
+                /
+                <a href="#" class="link">硬盘榨干器</a>
+            </p>
             <ul>
-                <li><a href="/">首页</a></li>
-                <li><a href="/products">更多产品</a></li>
-                <li><a href="#author">社交平台</a></li>
+                <li><a class="btn soft" href="/">首页</a></li>
+                <li id="nav-products" class="nav-products"></li>
+                <li><a class="btn soft" href="#author">社交平台</a></li>
+                <li><a class="btn soft" id="theme-toggle" href="javascript:void(0)" title="切换主题">🌓</a></li>
             </ul>
         </div>
     </nav>
@@ -32,22 +33,30 @@
     <!--主页banner-->
     <header id="top" class="banner gradient" style="background: linear-gradient(-225deg, #473B7B 0%, #3584A7 50%, #30D2BE 100%);background-size: 400% 400%;">
         <div class="container">
-            <img src="/img/Icon/Disk-Squeezer.512px.png" alt="Disk-Squeezer" class="product_img">
+            <img src="/assets/images/icons/Disk-Squeezer/icon.png" alt="Disk-Squeezer" class="product_img">
             <h1><b>硬盘榨干器</b></h1>
-            <p><b>英文名：Disk-Squeezer | 快速榨干电脑磁盘空间的嚎工具👍</b></p>
-            <a href="download" class="btn">前往下载</a>
+            <p><b>Disk-Squeezer | 快速榨干电脑磁盘空间的嚎工具👍</b></p>
+            <a href="download" class="btn glass">前往下载</a>
         </div>
     </header>
 
-    <!--两大模式-->
+    <!--三大模式-->
     <section id="project-cards" class="section light-bg">
         <div class="container">
-            <h2><b>两大模式</b></h2>
+            <h2><b>三大模式</b></h2>
             <div class="product-intros">
+                <div class="product-intro">
+                    <h3>划区模式</h3>
+                    <ul>
+                        <li>核心功能之一，瞬间榨干</li>
+                        <li>于1.4版本加入</li>
+                        <li>速度最快，瞬间榨干</li>
+                    </ul>
+                </div>
                 <div class="product-intro">
                     <h3>命令模式</h3>
                     <ul>
-                        <li>最实用</li>
+                        <li>核心功能之一，极快速</li>
                         <li>于1.4版本加入</li>
                         <li>速度极快，可以在几秒之内榨干</li>
                     </ul>
@@ -55,10 +64,47 @@
                 <div class="product-intro">
                     <h3>写入模式</h3>
                     <ul>
-                        <li>核心功能之一</li>
+                        <li>核心功能之一，相对较慢</li>
                         <li>伴随着硬盘榨干器的诞生</li>
-                        <li>速度较慢，需要数至数十分钟</li>
+                        <li>速度相对较慢，需要数至数十分钟</li>
                     </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--主要功能-->
+    <section id="main_functions" class="section light-bg">
+        <div class="container">
+            <h2><b>主要功能</b></h2>
+            <div class="product-intros area-intros">
+                <div class="product-introarea">
+                    <div class="product-introarea-text">
+                        <h3>Fluent 样式界面</h3>
+                        <p>简洁的界面，各种功能<b><u>一目了然</u></b>。<br>Android 平台为 Material 样式</p>
+                    </div>
+                    <img src="/assets/images/screenshots/Disk-Squeezer/gui.webp" class="intro_img">
+                </div>
+                <div class="product-introarea">
+                    <div class="product-introarea-text">
+                        <h3>三大模式</h3>
+                        <p>多种榨干方式，<b><u>榨干最快仅在一瞬间</u></b>！</p>
+                    </div>
+                    <img src="/assets/images/screenshots/Disk-Squeezer/mode-select.webp" class="intro_img">
+                </div>
+                <div class="product-introarea">
+                    <div class="product-introarea-text">
+                        <h3>跨平台</h3>
+                        <p>跨 Windows/Linux/Android 等平台，提供 Windows 和 Android 平台的预编译文件。</p>
+                    </div>
+                    <img src="/assets/images/screenshots/Disk-Squeezer/gui-android.webp" class="intro_img">
+                </div>
+                <div class="product-introarea">
+                    <div class="product-introarea-text">
+                        <h3>命令行版本整合</h3>
+                        <p>将命令行版本的功能整合至新版本中，GUI 和 CLI <b><u>两用</u></b>。</p>
+                    </div>
+                    <img src="/assets/images/screenshots/Disk-Squeezer/cli.webp" class="intro_img">
                 </div>
             </div>
         </div>
@@ -70,7 +116,22 @@
             <h2><b>各大重要版本</b></h2>
             <div class="product-intros">
                 <a href="download" title="点击前往下载页" class="product-intro golden">
-                    <h3>最新版-2.0版本</h3>
+                    <h3>最新版-3.0版本</h3>
+                    <ul>
+                        <li>2025年7月8日发布</li>
+                        <li>最实用，也是最重要、速度最快的版本之一</li>
+                        <li>项目架构完全重构，废弃旧仓库中混乱的版本目录结构与冗余的编译产物，统一代码命名规范，实现标准化工程管理</li>
+                        <li>界面转用 QML，彻底摒弃此前复杂的视觉动效</li>
+                        <li>Qt 版本由 5.12.12 升级至 6.10.1（Linux 平台为 6.11.0）</li>
+                        <li>统一界面风格，去除复杂的界面样式和眼花缭乱的动画</li>
+                        <li>去除多语言（目前没有存在的必要）</li>
+                        <li>将独立仓库中的命令行版本功能合并至主程序，命令行版本仓库将停止更新</li>
+                        <li>支持 Windows、Linux 和 Android 三大平台</li>
+                        <li>写入模式效率优化，命令模式效率进一步提高</li>
+                    </ul>
+                </a>
+                <a href="download" title="点击前往下载页" class="product-intro">
+                    <h3>2.0版本</h3>
                     <ul>
                         <li>2024年11月30日发布</li>
                         <li>界面几乎重写，使用相对位置，适配各个屏幕</li>
@@ -101,7 +162,6 @@
                     <h3>1.4版本</h3>
                     <ul>
                         <li>2023年10月22日发布</li>
-                        <li>最实用，也是最重要的速度最快的版本之一</li>
                         <li>加入了命令模式，从此榨干仅是分秒之事</li>
                     </ul>
                 </a>
@@ -121,8 +181,8 @@
     <section id="bilibili_video" class="section light-bg">
         <div class="container">
             <h2><b>B站视频</b></h2>
-            <div class="video-container">
-                <iframe src="https://player.bilibili.com/player.html?bvid=BV1oWznYsEgJ" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" class="video"> </iframe>
+            <div class="embed-wrapper ratio-16-9">
+                <iframe src="https://player.bilibili.com/player.html?bvid=BV1oWznYsEgJ" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" class="embed-content"></iframe>
             </div>
         </div>
     </section>
@@ -132,7 +192,7 @@
         <div class="container">
             <h2><b>制作者</b></h2>
             <div class="profile">
-                <img src="/img/ProfilePicture/龙ger_longer.png" alt="Profile Picture" class="profile_img">
+                <img src="/assets/images/avatars/龙ger_longer.webp" alt="Profile Picture" class="profile_img">
                 <div class="bio">
                     <b>
                     <p>龙ger_longer：科技区整活UP主 | GitHub贡献者 | 硬盘榨干器制作者</p>
@@ -145,7 +205,7 @@
                         <a href="https://www.ixigua.com/home/308276834862408" target="_blank" class="btn xigua">西瓜视频</a>
                         <a href="https://www.toutiao.com/c/user/token/MS4wLjABAAAAxkLNY3Z7gbYJdfK0zdDK7uKG-jKFtMxmFeBk_M_yl3w" target="_blank" class="btn toutiao">今日头条</a>
                         <a href="https://www.kuaishou.com/profile/3x2kzmpqxkh9ngk" target="_blank" class="btn kuaishou">快手</a>
-                        <a href="https://github.com/longlonger2022" target="_blank" class="btn github">GitHub个人主页</a>
+                        <a href="https://github.com/0xlonger" target="_blank" class="btn github">GitHub个人主页</a>
                     </div>
                 </div>
             </div>
@@ -164,6 +224,7 @@
     <footer id="footer"></footer>
 
     <script src="/js/script.js"></script>
+    <script src="/js/nav-products.js"></script>
     <script src="/js/ad.js"></script>
     <script src="/js/footer.js"></script>
 
